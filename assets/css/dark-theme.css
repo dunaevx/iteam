@@ -151,6 +151,13 @@ footer{
     margin-left: 30px;
 
     border-radius: 50px;
+    border-color: #fff;
+    
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    transition: .5s;
+}
+
+.switch-btn:hover{
+    background-color: rgb(197, 197, 197);
 }
