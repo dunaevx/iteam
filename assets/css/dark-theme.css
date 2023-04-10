@@ -8,6 +8,8 @@ body{
 
 }
 
+
+/* header */
 .header {
     padding-top: 30px;
     width: 100%;
@@ -28,6 +30,7 @@ body{
     align-items: center;
 }
 
+/* линия под hover */
 .line{
     margin-top: 5px;
     width: 100%;
@@ -79,6 +82,7 @@ body{
     opacity: 1;
 }
 
+/* ссылки */
 a{
     text-decoration: none;
     color: #ffffff; 
@@ -89,10 +93,67 @@ a:hover{
     color:rgb(161, 3, 3);
 }
 
+/* кнопка назад */
 .back{
     margin: 40px 0 0 10%;
     position: absolute;
 }
+
+/* кнопка выкл\вкл */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 18px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 11px;
+    width: 10px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #000;
+  }
+  
+  input:focus + .slider {
+  
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+  
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
 
 /* main */
 main{
@@ -109,11 +170,13 @@ footer{
     bottom: 0;
 }
 
+/* название logo */
 .footer_logo{
     display: flex;
     align-items: center;
     font-size: 18px;
 }
+
 
 .footer_nav{
     display: flex;
@@ -136,10 +199,12 @@ footer{
     opacity: 0;
 }
 
+/* низ footer */
 .podval{
     font-size: 1px;
     margin-left: 10%;
 }
+
 
 .icon{
     margin-right: 20px;
@@ -148,21 +213,4 @@ footer{
 
 .icon:hover{
     opacity: 0.8;
-}
-
-
-
-.switch-btn{
-    margin-left: 30px;
-
-    border-radius: 50px;
-    border-color: #fff;
-    
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    transition: .5s;
-}
-
-.switch-btn:hover{
-    background-color: rgb(197, 197, 197);
 }

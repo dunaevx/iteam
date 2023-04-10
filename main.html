@@ -3,7 +3,7 @@
 <head>
     <link rel="shortcut icon" href="assets/images/kisspng-landscape-mountain-clip-art-mountains-png-clipart-5a766a5eda8bb0.9267560215177099188952.png" type="image/x-icon">
    
-    <link rel="stylesheet" href="assets/css/dark-theme.css"  id="theme-stylesheet">
+    <link rel="stylesheet" href="/assets/css/dark-theme.css"  id="theme-stylesheet">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +24,10 @@
                     <a class="nav__link" href="#">Blog</a>
                     <a class="nav__link" href="#">Work</a>
                     <a class="nav__link" href="#">Contact</a>
-                    <button class="switch-btn">Тема</button>
+                    <label class="switch">
+                        <input type="checkbox" onclick="toggleSwitch()"/>
+                        <span class="slider round"></span>
+                    </label>    
                 </nav>
             </div>
         </div>

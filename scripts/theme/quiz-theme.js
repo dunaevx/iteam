@@ -1,11 +1,9 @@
-const switchBtn = document.querySelector('.switch-btn');
-const themeStylesheet = document.querySelector('#theme-stylesheet');
-
-switchBtn.addEventListener('click', function() {
-  if (themeStylesheet.getAttribute('href') === '/assets/css/light-theme.css') {
-    themeStylesheet.setAttribute('href', '/assets/css/dark-theme.css');
+function toggleSwitch() {
+  var linkElement = document.querySelector('link[href="/assets/css/light-theme.css"]');
+  if (linkElement) {
+    linkElement.setAttribute('href', '/assets/css/dark-theme.css');
   } else {
-    themeStylesheet.setAttribute('href', '/assets/css/light-theme.css');
+    linkElement = document.querySelector('link[href="/assets/css/dark-theme.css"]');
+    linkElement.setAttribute('href', '/assets/css/light-theme.css');
   }
-});
-
+}
