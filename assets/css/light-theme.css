@@ -155,11 +155,28 @@ a:hover{
 
 /* main */
 main{
-    margin-top: 100px;
+    min-height: 500px;
     justify-content: center;
     text-align: center;
     align-items: center;
 }
+
+.contetn{
+    display: inline-block;
+    width: auto;
+    height: auto;
+
+    background-image: url(" ");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.plorem{
+    padding: 20px 50px 50px 50px;
+
+}
+
 /* footer */
 footer{
     position: relative;
